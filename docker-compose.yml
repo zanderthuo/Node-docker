@@ -1,6 +1,6 @@
 version: "3"
 services:
-### nodejs 
+### nodejs
   node-docker-app:
     build: .
     ports:
@@ -13,8 +13,8 @@ services:
   mongo:
     image: mongo
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
-      - MONGO_INITDB_ROOT_PASSWORD=secret
+      - MONGO_INITDB_ROOT_USERNAME=MONGO_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=MONGO_PASSWORD
     volumes:
       - mongo-db:/data/db
 
